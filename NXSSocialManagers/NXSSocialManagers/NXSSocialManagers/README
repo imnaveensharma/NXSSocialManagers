@@ -1,0 +1,64 @@
+//--- Facebook ---//
+1.  Open Facebook dashboard to create new App and App Id through below give link.
+    https://developers.facebook.com/apps
+
+2.  Setup Facebook login by adding "Facebook Login" product to your App.
+
+3.  Follow Quickstart guide to setup properly.
+
+4.  Setup Development Environment. Here we use Cocoapods to install Facebook SDK.
+
+5.  Add the following to your Podfile:
+    pod 'FBSDKLoginKit'
+
+6.  Run the following command in your project root directory from a terminal window:
+    $ pod install
+
+7.  Add Bundle Identifier.
+
+8.  Enable Single Sign On for App.
+
+9.  Configure info.plist
+
+10. Configure App Delegate as configured in this sample App.
+
+11. Now go through FacebookViewController for Login.
+
+12. More Links:
+    https://github.com/facebook/facebook-ios-sdk
+    https://developers.facebook.com/docs/
+    https://developers.facebook.com/docs/ios/getting-started/
+    https://developers.facebook.com/docs/swift
+
+
+//--- Google ---//
+1.  Open Google Cloud Platform dashboard to create new App through below given link.
+    https://console.cloud.google.com/home/dashboard
+    https://console.cloud.google.com/projectselector2/home/dashboard
+
+2.  Create new project.
+
+3.  Follow steps from below given link.
+    https://developers.google.com/identity/sign-in/ios/start?ver=swift
+
+4.  Install pod 'GoogleSignIn'
+
+5.  Configure and register App under "OAuth consent screen" tab from Project dashboard.
+
+6.  Created an OAuth client ID under "Credentials" tab from Project dashboard. Save client Id. Add this client id in NXSGoogleManager initilization. (Imp)
+
+7.  Add a URL scheme to your project. (Imp)
+
+8.  More Links:
+    https://developers.google.com/identity/sign-in/ios/sign-in
+    https://developers.google.com/identity/sign-in/ios/start-integrating
+
+
+
+
+Note:
+1. Run pod install.
+2. Add your Facebook App Id in info.plist for Facebook login.
+3. Add Client Id in NXSGoogleManager class for Google Login.
+4. Add URL Scheme for Google Login.
+
