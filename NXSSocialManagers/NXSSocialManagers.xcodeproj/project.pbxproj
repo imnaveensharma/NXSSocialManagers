@@ -30,6 +30,8 @@
 		AF06CE7F23E5C0650051ABFD /* Google_7.png in Resources */ = {isa = PBXBuildFile; fileRef = AF06CE7823E5C0650051ABFD /* Google_7.png */; };
 		AF06CE8023E5C0650051ABFD /* Google_4.png in Resources */ = {isa = PBXBuildFile; fileRef = AF06CE7923E5C0650051ABFD /* Google_4.png */; };
 		AF06CE8123E5C0650051ABFD /* Google_5.png in Resources */ = {isa = PBXBuildFile; fileRef = AF06CE7A23E5C0650051ABFD /* Google_5.png */; };
+		AF06CE8323E67AFE0051ABFD /* Facebook_6.png in Resources */ = {isa = PBXBuildFile; fileRef = AF06CE8223E67AFE0051ABFD /* Facebook_6.png */; };
+		AF06CE8523E67C6B0051ABFD /* Facebook_7.png in Resources */ = {isa = PBXBuildFile; fileRef = AF06CE8423E67C6B0051ABFD /* Facebook_7.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		AF06CE7823E5C0650051ABFD /* Google_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Google_7.png; sourceTree = "<group>"; };
 		AF06CE7923E5C0650051ABFD /* Google_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Google_4.png; sourceTree = "<group>"; };
 		AF06CE7A23E5C0650051ABFD /* Google_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Google_5.png; sourceTree = "<group>"; };
+		AF06CE8223E67AFE0051ABFD /* Facebook_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Facebook_6.png; sourceTree = "<group>"; };
+		AF06CE8423E67C6B0051ABFD /* Facebook_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Facebook_7.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,8 @@
 				AF06CE6C23E5C0500051ABFD /* Facebook_3.png */,
 				AF06CE6E23E5C0510051ABFD /* Facebook_4.png */,
 				AF06CE6D23E5C0510051ABFD /* Facebook_5.png */,
+				AF06CE8423E67C6B0051ABFD /* Facebook_7.png */,
+				AF06CE8223E67AFE0051ABFD /* Facebook_6.png */,
 			);
 			path = Facebook;
 			sourceTree = "<group>";
@@ -227,6 +233,7 @@
 				AF06CE8123E5C0650051ABFD /* Google_5.png in Resources */,
 				AF06CE5023E561D70051ABFD /* README in Resources */,
 				AF06CE4323E561160051ABFD /* LaunchScreen.storyboard in Resources */,
+				AF06CE8523E67C6B0051ABFD /* Facebook_7.png in Resources */,
 				AF06CE7023E5C0510051ABFD /* Facebook_2.png in Resources */,
 				AF06CE7123E5C0510051ABFD /* Facebook_3.png in Resources */,
 				AF06CE7F23E5C0650051ABFD /* Google_7.png in Resources */,
@@ -236,6 +243,7 @@
 				AF06CE8023E5C0650051ABFD /* Google_4.png in Resources */,
 				AF06CE7323E5C0510051ABFD /* Facebook_4.png in Resources */,
 				AF06CE3E23E561110051ABFD /* Main.storyboard in Resources */,
+				AF06CE8323E67AFE0051ABFD /* Facebook_6.png in Resources */,
 				AF06CE7E23E5C0650051ABFD /* Google_3.png in Resources */,
 				AF06CE7B23E5C0650051ABFD /* Google_1.png in Resources */,
 				AF06CE7C23E5C0650051ABFD /* Google_2.png in Resources */,
