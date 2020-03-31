@@ -32,6 +32,10 @@
 		AF06CE8123E5C0650051ABFD /* Google_5.png in Resources */ = {isa = PBXBuildFile; fileRef = AF06CE7A23E5C0650051ABFD /* Google_5.png */; };
 		AF06CE8323E67AFE0051ABFD /* Facebook_6.png in Resources */ = {isa = PBXBuildFile; fileRef = AF06CE8223E67AFE0051ABFD /* Facebook_6.png */; };
 		AF06CE8523E67C6B0051ABFD /* Facebook_7.png in Resources */ = {isa = PBXBuildFile; fileRef = AF06CE8423E67C6B0051ABFD /* Facebook_7.png */; };
+		AFFFB2F524338BD700C88411 /* NXSSocialManagerUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFFB2F424338BD700C88411 /* NXSSocialManagerUtility.swift */; };
+		AFFFB2F724338C1200C88411 /* NXSAppleSignInManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFFB2F624338C1200C88411 /* NXSAppleSignInManager.swift */; };
+		AFFFB2F924338E8100C88411 /* AppleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFFB2F824338E8100C88411 /* AppleViewController.swift */; };
+		AFFFB2FB2433972000C88411 /* NXSKeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFFB2FA2433972000C88411 /* NXSKeychainManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +66,10 @@
 		AF06CE7A23E5C0650051ABFD /* Google_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Google_5.png; sourceTree = "<group>"; };
 		AF06CE8223E67AFE0051ABFD /* Facebook_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Facebook_6.png; sourceTree = "<group>"; };
 		AF06CE8423E67C6B0051ABFD /* Facebook_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Facebook_7.png; sourceTree = "<group>"; };
+		AFFFB2F424338BD700C88411 /* NXSSocialManagerUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NXSSocialManagerUtility.swift; sourceTree = "<group>"; };
+		AFFFB2F624338C1200C88411 /* NXSAppleSignInManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NXSAppleSignInManager.swift; sourceTree = "<group>"; };
+		AFFFB2F824338E8100C88411 /* AppleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleViewController.swift; sourceTree = "<group>"; };
+		AFFFB2FA2433972000C88411 /* NXSKeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NXSKeychainManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +129,9 @@
 				AF06CE4D23E561BF0051ABFD /* NXSFbManager.swift */,
 				AF06CE5123E564C10051ABFD /* NXSGoogleManager.swift */,
 				AF06CE4F23E561D70051ABFD /* README */,
+				AFFFB2F424338BD700C88411 /* NXSSocialManagerUtility.swift */,
+				AFFFB2F624338C1200C88411 /* NXSAppleSignInManager.swift */,
+				AFFFB2FA2433972000C88411 /* NXSKeychainManager.swift */,
 			);
 			path = NXSSocialManagers;
 			sourceTree = "<group>";
@@ -131,6 +142,7 @@
 				AF06CE6423E5B3010051ABFD /* FacebookViewController.swift */,
 				AF06CE6323E5B3010051ABFD /* GoogleViewController.swift */,
 				AF06CE3A23E561110051ABFD /* MainViewController.swift */,
+				AFFFB2F824338E8100C88411 /* AppleViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -259,10 +271,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF06CE5223E564C10051ABFD /* NXSGoogleManager.swift in Sources */,
+				AFFFB2FB2433972000C88411 /* NXSKeychainManager.swift in Sources */,
 				AF06CE3B23E561110051ABFD /* MainViewController.swift in Sources */,
+				AFFFB2F724338C1200C88411 /* NXSAppleSignInManager.swift in Sources */,
 				AF06CE6623E5B3010051ABFD /* FacebookViewController.swift in Sources */,
+				AFFFB2F524338BD700C88411 /* NXSSocialManagerUtility.swift in Sources */,
 				AF06CE4E23E561BF0051ABFD /* NXSFbManager.swift in Sources */,
 				AF06CE4C23E5619E0051ABFD /* SocialUserInfo.swift in Sources */,
+				AFFFB2F924338E8100C88411 /* AppleViewController.swift in Sources */,
 				AF06CE3723E561110051ABFD /* AppDelegate.swift in Sources */,
 				AF06CE6523E5B3010051ABFD /* GoogleViewController.swift in Sources */,
 			);

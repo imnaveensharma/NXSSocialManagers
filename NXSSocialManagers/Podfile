@@ -7,9 +7,12 @@ target 'NXSSocialManagers' do
 
   # Pods for NXSSocialManagers
 
-  #pod 'FBSDKLoginKit'
-  #pod 'FBSDKCoreKit'
+  pod 'FBSDKLoginKit'
+  pod 'FBSDKCoreKit'
+  pod 'FBSDKShareKit'
 
-  #pod 'GoogleSignIn'
+  pod 'GoogleSignIn'
+
+  #pod 'TwitterKit'
 
 end

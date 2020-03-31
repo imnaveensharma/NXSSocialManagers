@@ -9,8 +9,12 @@
 import UIKit
 import FBSDKLoginKit
 import FBSDKCoreKit
+import FBSDKShareKit
 
-class NXSFbManager: NSObject {
+//Dashboard: https://developers.facebook.com/apps
+//Implementation: https://developers.facebook.com/docs/ios/getting-started/
+
+class NXSFbManager: NSObject, SharingDelegate {
 
     // MARK: - Properties ::
     internal static let shared: NXSFbManager = {
@@ -71,6 +75,48 @@ class NXSFbManager: NSObject {
         }
     }
 
+    func openShareDialogWithContentURL(url: URL?, message: String?, fromViewController viewController: UIViewController)
+    {
+        let content: ShareLinkContent = ShareLinkContent()
+        if url != nil { content.contentURL = url! } //URL(string: "https://developers.facebook.com")!
+        content.quote = message ?? ""
+        //content.hashtag = Hashtag("#MadeWithHackbook")
+
+        let shareDialog: ShareDialog = ShareDialog()
+        shareDialog.shareContent = content
+
+        if shareDialog.canShow {
+            let _ = ShareDialog(fromViewController: viewController, content: content, delegate: self).show()
+        }
+    }
+
+    func openShareDialogWithImage(image: UIImage, fromViewController viewController: UIViewController)
+    {
+        let photo: SharePhoto = SharePhoto()
+        photo.image = image
+        photo.isUserGenerated = true
+
+        let content: SharePhotoContent = SharePhotoContent()
+        content.photos = [photo]
+
+        let shareDialog: ShareDialog = ShareDialog()
+        shareDialog.shareContent = content
+
+        if shareDialog.canShow {
+            let _ = ShareDialog(fromViewController: viewController, content: content, delegate: nil)
+        }
+    }
+
+    func shareImage(image: UIImage)
+    {
+        let photo: SharePhoto = SharePhoto()
+        photo.image = image
+        photo.isUserGenerated = true
+
+        let content: SharePhotoContent = SharePhotoContent()
+        content.photos = [photo]
+    }
+
     private func getUserInfo(completionClosure: @escaping (_ socialUserInfo: SocialUserInfo?, _ message: String?, _ success: Bool) -> ())
     {
         print("NXSFbManager :: Getting User Information")
@@ -105,7 +151,7 @@ class NXSFbManager: NSObject {
 
                     print("NXSFbManager :: User Info = UserId: \(userId), UserName: \(name), UserEmail: \(email), UserProfilePic: \(imageURL)")
 
-                    completionClosure(socialUserInfo, "Faceboo Login Success", true)
+                    completionClosure(socialUserInfo, "Facebook Login Success", true)
                 }
            }
     }
@@ -123,5 +169,18 @@ class NXSFbManager: NSObject {
 
     func logout() {
         LoginManager().logOut()
+    }
+
+    // MARK: - SharingDelegate ::
+    func sharer(_ sharer: Sharing, didCompleteWithResults results: [String : Any]) {
+        print("NXSFbManager :: Sharing Done")
+    }
+
+    func sharer(_ sharer: Sharing, didFailWithError error: Error) {
+        print("NXSFbManager :: Sharing Fail with Error :: \(error)")
+    }
+
+    func sharerDidCancel(_ sharer: Sharing) {
+        print("NXSFbManager :: Sharing Cancel")
     }
 }

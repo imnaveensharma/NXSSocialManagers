@@ -10,7 +10,7 @@
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="SocialManagers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="NXSSocialManagers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,7 +44,7 @@
         <!--Facebook View Controller-->
         <scene sceneID="eU4-UJ-nem">
             <objects>
-                <viewController storyboardIdentifier="FacebookViewController" id="wO9-j9-joo" customClass="FacebookViewController" customModule="SocialManagers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FacebookViewController" id="wO9-j9-joo" customClass="FacebookViewController" customModule="NXSSocialManagers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mee-0F-O4J">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -78,7 +78,7 @@
         <!--Google View Controller-->
         <scene sceneID="CUG-pb-5es">
             <objects>
-                <viewController storyboardIdentifier="GoogleViewController" id="CqX-IY-yEW" customClass="GoogleViewController" customModule="SocialManagers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GoogleViewController" id="CqX-IY-yEW" customClass="GoogleViewController" customModule="NXSSocialManagers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hm3-Xs-DHi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -106,6 +106,21 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VrK-ix-d7k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1575" y="110"/>
+        </scene>
+        <!--Apple View Controller-->
+        <scene sceneID="UDJ-oM-jhM">
+            <objects>
+                <viewController storyboardIdentifier="AppleViewController" id="BSs-1G-Tdz" customClass="AppleViewController" customModule="NXSSocialManagers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pkj-Rx-Kq9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="RKM-ec-mx7"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pyv-kV-T2F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1575" y="110"/>
         </scene>

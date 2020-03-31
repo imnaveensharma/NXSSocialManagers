@@ -23,7 +23,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.title = "Social Managers"
 
         self.arrayContent = [["title": "Facebook"],
-                             ["title": "Google"]]
+                             ["title": "Google"],
+                             ["title": "Apple"]]
 
         self.tblView.reloadData()
     }
@@ -91,6 +92,10 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
             }
         } else if indexPath.row == 1 { //Google
             if let objViewC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "GoogleViewController") as? GoogleViewController {
+                self.navigationController?.pushViewController(objViewC, animated: true)
+            }
+        } else if indexPath.row == 2 { //Apple
+            if let objViewC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AppleViewController") as? AppleViewController {
                 self.navigationController?.pushViewController(objViewC, animated: true)
             }
         }

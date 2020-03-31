@@ -46,6 +46,7 @@ class FacebookViewController: UIViewController, UITableViewDelegate, UITableView
     private func updateAndReloadTable() {
         self.arrayContent.append(["title": "Login"])
         if NXSFbManager.shared.isUserLogin() {
+            self.arrayContent.append(["title": "Share"])
             self.arrayContent.append(["title": "Logout"])
         }
 
@@ -66,6 +67,10 @@ class FacebookViewController: UIViewController, UITableViewDelegate, UITableView
                 }
             }
         }
+    }
+
+    private func share() {
+        NXSFbManager.shared.openShareDialogWithContentURL(url: URL(string: "https://www.google.com"), message: "Hey! I am inviting you to visit Google. Click on the link.", fromViewController: self)
     }
 
     private func logout() {
@@ -115,6 +120,8 @@ class FacebookViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 { //Login
             self.login()
+        } else if indexPath.row == 1 { //share
+            self.share()
         } else if indexPath.row == 1 { //Logout
             self.logout()
         }
