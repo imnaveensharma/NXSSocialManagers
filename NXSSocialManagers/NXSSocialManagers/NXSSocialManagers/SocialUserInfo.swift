@@ -11,8 +11,8 @@ import UIKit
 enum SocialLoginType: Int {
     case facebook = 1
     case google = 2
-    case instagram = 3
-    case apple = 4
+    case apple = 3
+    case instagram = 4
 }
 
 struct SocialUserInfo {

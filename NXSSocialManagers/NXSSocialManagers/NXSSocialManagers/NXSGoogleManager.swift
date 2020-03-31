@@ -9,6 +9,13 @@
 import UIKit
 import GoogleSignIn
 
+/*
+Step 1: Open https://developers.google.com/identity/sign-in/ios/start?ver=swift
+Step 2: Install pod 'GoogleSignIn'
+Step 3: Created an OAuth client ID
+Step 4: Add a URL scheme to your project.
+*/
+
 class NXSGoogleManager: NSObject, GIDSignInDelegate {
 
     private var googleLoginResult:((_ socialUserInfo: SocialUserInfo?, _ message: String?, _ success: Bool)->())?
@@ -62,7 +69,7 @@ class NXSGoogleManager: NSObject, GIDSignInDelegate {
             else
             {
                 print("NXSGoogleManager :: Google Login Error 2 :: \(error.localizedDescription)")
-                self.googleLoginResult?(nil, "Facebook Login Error", false)
+                self.googleLoginResult?(nil, "Google Login Error", false)
             }
         }
         else
