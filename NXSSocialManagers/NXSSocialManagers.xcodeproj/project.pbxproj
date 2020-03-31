@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5B18CAB02010996823883A90 /* Pods_NXSSocialManagers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10DEBFA34BBDD849FC084D9F /* Pods_NXSSocialManagers.framework */; };
 		AF06CE3723E561110051ABFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF06CE3623E561110051ABFD /* AppDelegate.swift */; };
 		AF06CE3B23E561110051ABFD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF06CE3A23E561110051ABFD /* MainViewController.swift */; };
 		AF06CE3E23E561110051ABFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF06CE3C23E561110051ABFD /* Main.storyboard */; };
@@ -40,7 +39,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		10DEBFA34BBDD849FC084D9F /* Pods_NXSSocialManagers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NXSSocialManagers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF06CE3323E561110051ABFD /* NXSSocialManagers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NXSSocialManagers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF06CE3623E561110051ABFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF06CE3A23E561110051ABFD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -72,8 +70,6 @@
 		AFFFB2F624338C1200C88411 /* NXSAppleSignInManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NXSAppleSignInManager.swift; sourceTree = "<group>"; };
 		AFFFB2F824338E8100C88411 /* AppleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleViewController.swift; sourceTree = "<group>"; };
 		AFFFB2FA2433972000C88411 /* NXSKeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NXSKeychainManager.swift; sourceTree = "<group>"; };
-		B377E09962942358102A2D02 /* Pods-NXSSocialManagers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NXSSocialManagers.release.xcconfig"; path = "Target Support Files/Pods-NXSSocialManagers/Pods-NXSSocialManagers.release.xcconfig"; sourceTree = "<group>"; };
-		CDA95EEA30854FF498F7D6DB /* Pods-NXSSocialManagers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NXSSocialManagers.debug.xcconfig"; path = "Target Support Files/Pods-NXSSocialManagers/Pods-NXSSocialManagers.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,26 +77,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B18CAB02010996823883A90 /* Pods_NXSSocialManagers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		427A6C9C4043409C8B2711E1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				10DEBFA34BBDD849FC084D9F /* Pods_NXSSocialManagers.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		5E62FF12BB47A5E1738C881E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CDA95EEA30854FF498F7D6DB /* Pods-NXSSocialManagers.debug.xcconfig */,
-				B377E09962942358102A2D02 /* Pods-NXSSocialManagers.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -111,7 +96,6 @@
 				AF06CE3523E561110051ABFD /* NXSSocialManagers */,
 				AF06CE3423E561110051ABFD /* Products */,
 				5E62FF12BB47A5E1738C881E /* Pods */,
-				427A6C9C4043409C8B2711E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -207,12 +191,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF06CE4723E561160051ABFD /* Build configuration list for PBXNativeTarget "NXSSocialManagers" */;
 			buildPhases = (
-				E3E1FBB452C4B0BA20F4DDEC /* [CP] Check Pods Manifest.lock */,
 				AF06CE2F23E561110051ABFD /* Sources */,
 				AF06CE3023E561110051ABFD /* Frameworks */,
 				AF06CE3123E561110051ABFD /* Resources */,
-				44CB689FDDE61CFAE34097D8 /* [CP] Embed Pods Frameworks */,
-				0636EE14469BAB83DD1882D9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -283,85 +264,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		0636EE14469BAB83DD1882D9 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NXSSocialManagers/Pods-NXSSocialManagers-resources.sh",
-				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NXSSocialManagers/Pods-NXSSocialManagers-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		44CB689FDDE61CFAE34097D8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NXSSocialManagers/Pods-NXSSocialManagers-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AppAuth/AppAuth.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMAppAuth/GTMAppAuth.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppAuth.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMAppAuth.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NXSSocialManagers/Pods-NXSSocialManagers-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E3E1FBB452C4B0BA20F4DDEC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NXSSocialManagers-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AF06CE2F23E561110051ABFD /* Sources */ = {
@@ -520,7 +422,6 @@
 		};
 		AF06CE4823E561160051ABFD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDA95EEA30854FF498F7D6DB /* Pods-NXSSocialManagers.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -538,7 +439,6 @@
 		};
 		AF06CE4923E561160051ABFD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B377E09962942358102A2D02 /* Pods-NXSSocialManagers.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
